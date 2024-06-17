@@ -53,7 +53,7 @@ export default function Portforlio(){
             </div>
             <div id="card">
                 <form onSubmit={handleSubmit} ref={formRef}>
-                    <fieldset>
+                    <fieldset className="fieldset">
                         <legend>General Information</legend>
                         <div>
                             <label>
@@ -74,7 +74,7 @@ export default function Portforlio(){
                             </label>
                         </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset className="fieldset">
                         <legend>Education</legend>
                         <div>
                             <label>
@@ -95,7 +95,7 @@ export default function Portforlio(){
                             </label>
                         </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset className="fieldset">
                         <legend>Work Experience</legend>
                         <div>
                             <label>

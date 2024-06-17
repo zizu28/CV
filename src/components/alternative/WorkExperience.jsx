@@ -20,12 +20,15 @@ export default function RenderedWorkInformation(){
                 <button type="button" className="btn head" style={{marginLeft: '5px'}} onClick={handleDelete}>Delete</button>
             </div>
             <div>
-                {
+                <fieldset>
+                    <legend>Work Experience</legend>
+                    {
                     renderedList.map(component => {
                         const newWorkKey = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
-                        return <div key={newWorkKey}>{component}</div>
-                    })
-                }
+                            return <div key={newWorkKey}>{component}</div>
+                        })
+                    }
+                </fieldset>
             </div>
         </div>
     )
@@ -60,9 +63,6 @@ function Work(){
     return (
         <div>
             <div className="divHeader">
-                <div>
-                    <h2 style={{marginLeft: '5px', textAlign: 'center'}}>Work Experience</h2>
-                </div>
                 <div style={{marginRight: '5px'}}>
                     <button type="button" className="btn head" onClick={() => {
                         document.querySelector('#WorkDialog').showModal();

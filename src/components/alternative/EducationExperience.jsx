@@ -21,12 +21,16 @@ export default function RenderedEducationInformation(){
                 <button type="button" className="btn head" style={{marginLeft: '5px'}} onClick={handleDelete}>Delete</button>
             </div>
             <div id="">
-                {
+                <fieldset>
+                    <legend>Educational Experience</legend>
+                    {
                     renderedEducationList.map(component => {
                         const newEducationKey = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
-                        return <div key={newEducationKey}>{component}</div>
-                    })
-                }
+                            return <div key={newEducationKey}>{component}</div>
+                        })
+                    }
+                </fieldset>
+                
             </div>
         </div>
     )
@@ -61,9 +65,6 @@ function Education(){
     return (
         <div>
             <div className="divHeader">
-                <div>
-                    <h2 style={{marginLeft: '5px', textAlign: 'center'}}>Education Experience</h2>
-                </div>
                 <div style={{marginRight: '5px'}}>
                     <button type="button" className="btn head" id="editBtn" onClick={() => {
                         document.querySelector('#EducationDialog').showModal();}}>Edit</button>

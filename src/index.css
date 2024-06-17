@@ -67,7 +67,7 @@ button:focus-visible {
   }
 }
 
-#PortfolioRoot {
+/* #PortfolioRoot {
   width: 60vw;
   display: grid;
   grid-template: 1fr / 1fr 500px;
@@ -107,7 +107,7 @@ fieldset {
 h3 {
   text-align: start;
   font-weight: lighter;
-}
+} */
 
 span {
   font-weight: bold;
